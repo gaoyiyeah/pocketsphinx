@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,17 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-
   <PropertyGroup Label="Globals">
     <ProjectGuid>{94001A0E-A837-445C-8004-F918F10D0226}</ProjectGuid>
     <RootNamespace>pocketsphinx</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -168,10 +168,12 @@
     <ClInclude Include="..\..\src\libpocketsphinx\ngram_search_fwdtree.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\phone_loop_search.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\pocketsphinx_internal.h" />
+    <ClInclude Include="..\..\src\libpocketsphinx\ps_alignment.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\ps_lattice_internal.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\ptm_mgau.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\s2_semi_mgau.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\s3types.h" />
+    <ClInclude Include="..\..\src\libpocketsphinx\state_align_search.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\tied_mgau_common.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\tmat.h" />
     <ClInclude Include="..\..\src\libpocketsphinx\vector.h" />
@@ -198,10 +200,12 @@
     <ClCompile Include="..\..\src\libpocketsphinx\ngram_search_fwdtree.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\phone_loop_search.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\pocketsphinx.c" />
+    <ClCompile Include="..\..\src\libpocketsphinx\ps_alignment.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\ps_lattice.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\ps_mllr.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\ptm_mgau.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\s2_semi_mgau.c" />
+    <ClCompile Include="..\..\src\libpocketsphinx\state_align_search.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\tmat.c" />
     <ClCompile Include="..\..\src\libpocketsphinx\vector.c" />
   </ItemGroup>
